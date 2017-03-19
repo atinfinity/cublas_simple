@@ -2,6 +2,7 @@
 
 #include <cuda_runtime.h>
 #include <cublas_v2.h>
+#include <iostream>
 
 static inline void ___cublasSafeCall(cublasStatus_t status, const char* file, const int line, const char* func)
 {
