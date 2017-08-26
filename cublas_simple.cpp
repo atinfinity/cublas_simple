@@ -31,7 +31,7 @@ int main(int argc, const char* argv[])
 	cublasSafeCall(cublasGetMatrix(M, N, sizeof(*a), devPtrA, M, a, M));
 	cublasSafeCall(cublasDestroy(handle));
 
-	cudaSafeCall(cudaFree(devPtrA));	
+	cudaSafeCall(cudaFree(devPtrA));
 	free(a);
 
 	return 0;
