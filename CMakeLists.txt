@@ -12,7 +12,7 @@ if(CUDA_FOUND)
 	CUDA_INCLUDE_DIRECTORIES(${CUDA_INCLUDE_DIRS})
 	include_directories(${CUDA_INCLUDE_DIRS})
 
-	CUDA_ADD_EXECUTABLE(cublas_simple ${SOURCES})
+	CUDA_ADD_EXECUTABLE(${PROJECT_NAME} ${SOURCES})
 
-	target_link_libraries(cublas_simple ${CUDA_LIBRARIES} ${CUDA_cublas_LIBRARY})
+	target_link_libraries(${PROJECT_NAME} ${CUDA_LIBRARIES} ${CUDA_cublas_LIBRARY})
 endif(CUDA_FOUND)
